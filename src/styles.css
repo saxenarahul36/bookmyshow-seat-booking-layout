@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.selected {
+  color: #fff;
+  background-color: #2dc492;
+  border-color: #2dc492;
+}
+.seat-disable {
+  background: #d8d8d8;
+  border-color: #d8d8d8;
+}
+.prise {
+  font-family: sans-serif;
+  text-align: left;
+}
+.selected a,
+.seat-disable a {
+  color: #fff;
+}
+a {
+  /* width: 21px;
+  height: 21px;
+  border-radius: 26%; */
+  color: #666;
+  text-align: center;
+  font-size: 11px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+table a {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 26%;
+  color: #666;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+}
+.table tbody tr td:not(:first-child) {
+  border: 1px solid #a7a7a7;
+  width: 1em;
+  height: 1em;
+  border-radius: 26%;
+  border: 1px solid #a7a7a7;
+
+  /* display: inline-block; */
+}
+
+.table td.freespace {
+  border: 1px solid #fff !important;
+  text-indent: -5000px;
+}
+
+/* .table tbody tr td:first-child {
+  font-weight: bold;
+} */
+
+/* .table tr td:nth-child(5) {
+  border: none !important;
+} */
+
+.table {
+  border-spacing: 9px;
+}
