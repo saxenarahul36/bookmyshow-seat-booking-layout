@@ -61,11 +61,33 @@ function App() {
     updateSeatLayoutList("selected");
     console.log(tempSelected);
   };
+
+  let totalAmountPay =
+    tempSelected.length > 0
+      ? tempSelected.map(
+          (item, index) =>
+            item.clubRate ||
+            item.ExecutiveRate + item.clubRate ||
+            item.ExecutiveRate
+        )
+      : "";
+  totalAmountPay =
+    tempSelected.length === numberOfSeat ? (
+      <div className="amount-pay">
+        <span>
+          Total amount Rs : {totalAmountPay[0] * totalAmountPay.length}{" "}
+        </span>{" "}
+        <input type="button" value="Pay now" />
+      </div>
+    ) : (
+      ""
+    );
   return (
     <div className="App">
       <h3>How Many Seats ?</h3>
       <SelectSeatOptions selectNumberOfseat={selectNumberOfseat} />
       <SeatLayOutComponent seatLayout={seatLayout} selectSeat={selectSeat} />
+      {totalAmountPay}
     </div>
   );
 }

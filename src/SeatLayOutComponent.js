@@ -6,7 +6,7 @@ const SeatLayOutComponent = props => {
       <thead>
         <tr>
           <td className="prise" colSpan="16">
-            <span>CLUBE- RS- 236.</span>
+            <span>CLUBE- RS- 450.</span>
             <hr />
           </td>
         </tr>

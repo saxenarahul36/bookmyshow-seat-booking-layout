@@ -54,14 +54,10 @@ table a {
   border: 1px solid #fff !important;
   text-indent: -5000px;
 }
-
-/* .table tbody tr td:first-child {
-  font-weight: bold;
-} */
-
-/* .table tr td:nth-child(5) {
-  border: none !important;
-} */
+.amount-pay {
+  margin: 59px;
+  font-size: 18px;
+}
 
 .table {
   border-spacing: 9px;
